@@ -1,0 +1,62 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Emoji Calculator</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="root" class="wrapper">
+    <div class="calculator">
+      <div class="inputs">
+        <form id="calculator-form" class="form">
+          <input id="initial-input" class="input" type="text" readonly />
+        </form>
+        <button id="new-expression" class="button">+ New Expression</button>
+        <p id="error-message" class="error_message"></p>
+      </div>
+      <div id="controls" class="controls">
+        <div class="controls_container">
+          <button class="button calculator-button">&#128052;</button>
+          <button class="button calculator-button">&#128047;</button>
+          <button class="button calculator-button">&#129409;</button>
+          <button class="button calculator-button">&#129437;</button>
+          <button class="button calculator-button">&#128023;</button>
+        </div>
+        <div class="controls_container">
+          <button class="button calculator-button">1</button>
+          <button class="button calculator-button">2</button>
+          <button class="button calculator-button">3</button>
+          <button class="button calculator-button">4</button>
+          <button class="button calculator-button">5</button>
+        </div>
+        <div class="controls_container">
+          <button class="button calculator-button">6</button>
+          <button class="button calculator-button">7</button>
+          <button class="button calculator-button">8</button>
+          <button class="button calculator-button">9</button>
+          <button class="button calculator-button">0</button>
+        </div>
+        <div class="controls_container">
+          <button class="button calculator-button">+</button>
+          <button class="button calculator-button">-</button>
+        </div>
+        <div class="controls_container">
+          <button class="button calculator-button">=</button>
+          <button class="button calculator-button">?</button>
+          <button id="backspace" class="button">&#60;</button>
+        </div>
+        <div class="controls_container">
+          <button type="reset" class="button" form="calculator-form">Reset</button>
+          <button type="submit" class="button" form="calculator-form">Calculate</button>
+        </div>
+      </div>
+    </div>
+    <div id="result-container" class="result"></div>
+  </div>
+
+  <script src="/js/index.js"></script>
+</body>
+
+</html>
